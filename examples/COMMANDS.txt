@@ -1,0 +1,7 @@
+# Run from repository root after building:
+./build/immunotiming_cli --mode baseline --out results/baseline
+./build/immunotiming_cli --mode single --vaccine-day 2 --cart-day 10 --out results/single
+./build/immunotiming_cli --mode rank --k 5 --out results/rank
+./build/immunotiming_cli --mode sensitivity --out results/sensitivity
+python3 visualization/plot_results.py results/baseline --output results/baseline.png
+ctest --test-dir build --output-on-failure

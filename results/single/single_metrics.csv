@@ -1,0 +1,2 @@
+scenario,tumor_auc,final_tumor,peak_cart,peak_effector,objective
+combined,9.0956289633,0.180884508887,0.639194927482,0.296711958548,9.18607121774
